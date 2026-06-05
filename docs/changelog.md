@@ -5,6 +5,7 @@
 ### Changed
 - Updated support metafrequency to 196.2.
 - Added a History section to the README crediting distantorigin, the original creator of Miriani-Next.
+- Removed the development metafrequency (338.7) announcement from startup prints.
 
 ## Version 5.0.00
 

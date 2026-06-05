@@ -1,5 +1,17 @@
 # Miriani-Aura Changelog
 
+## Version 5.0.01
+
+### Changed
+- Updated support metafrequency to 196.2.
+- Added a History section to the README crediting distantorigin, the original creator of Miriani-Next.
+
+## Version 5.0.00
+
+### Changed
+- Rebranded the client package and companion updater from Miriani-Next to Miriani-Aura.
+- Updated repository reference URLs to point to spacemangaming.
+
 ## Version 4.1.35 (In Progress)
 
 ### Fixed

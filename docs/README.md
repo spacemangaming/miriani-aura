@@ -46,7 +46,7 @@ If you're confused about anything, join metafrequency channel 7.07 in-game and s
 
 ## Installation
 
-1. Download the Next Launcher from the [releases page](https://github.com/distantorigin/next-launcher/releases)
+1. Download the Next Launcher from the [releases page](https://github.com/spacemangaming/next-launcher/releases)
 2. Run `miriani.exe`
 3. The launcher will guide you through initial installation and updates
 
@@ -59,7 +59,7 @@ The launcher handles everything automatically - installation, updates, channel s
 There are two versions of the installer available:
 
 - **miriani.exe** (Online Installer): A small download that fetches the latest files from the internet during installation. This is the recommended choice for most users, and is housed in a separate repository.
-- **miriani-x.y.z.exe** (Offline Installer): A larger download that contains everything needed to install without an internet connection. Use this if you have unreliable internet or need to install on a computer without network access. You can find these on the [miriani-Next releases page](https://github.com/distantorigin/miriani-next/releases).
+- **miriani-x.y.z.exe** (Offline Installer): A larger download that contains everything needed to install without an internet connection. Use this if you have unreliable internet or need to install on a computer without network access. You can find these on the [miriani-Next releases page](https://github.com/spacemangaming/miriani-next/releases).
 
 Both installers work the same way - the only difference is whether files are downloaded during installation or already included.
 

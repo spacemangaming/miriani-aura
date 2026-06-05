@@ -71,7 +71,7 @@ end
 
 function download_updater(callback)
   local homedir = GetInfo(66)
-  local download_url = "https://github.com/distantorigin/next-launcher/releases/latest/download/miriani.exe"
+  local download_url = "https://github.com/spacemangaming/next-launcher/releases/latest/download/miriani.exe"
   local updater_path = homedir .. "update.exe"
 
   Note("Downloading updater...")

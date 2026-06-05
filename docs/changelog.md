@@ -406,7 +406,7 @@
 - MUSHclient window will now size itself correctly when automatically opening the accessible output window.
 - Formatted scan output for artifacts now includes the Type field, if applicable.
 - Added repair timer notifications: get notified when repairs complete while outside engineering (conf ship repair). Press Ctrl+E to check the timer.
-- Shiny new website at https://distantorigin.github.io/miriani-next/
+- Shiny new website at https://spacemangaming.github.io/miriani-next/
 
 ### Changed
 - Reorganized scan filter shortcuts: sca is now Average Component Damage, scc is Coordinates, scp is Identifiable Power Sources, scs is Cargo. Removed scf, scg, and scv.
@@ -434,7 +434,7 @@
 ## Version 4.1.00
 
 ### New
-- Comprehensive README rewrite with improved organization, clearer installation instructions, and expanded documentation for all features. You can view the README at https://github.com/distantorigin/miriani-next/
+- Comprehensive README rewrite with improved organization, clearer installation instructions, and expanded documentation for all features. You can view the README at https://github.com/spacemangaming/miriani-next/
 - Complete overhaul of the ambiance system with a new rooms.lua module:
   - Three-tier room matching system: exact room names are checked first, then pattern matching, then fallback to room type from the game's environment flags.
   - Added documentation in rooms.lua explaining how to add new ambiances.
@@ -448,7 +448,7 @@
 - CI now builds offline installers by embedding the release ZIP into the launcher, giving us an automatically compiled binary for every release.
 - Release artifacts and installer filenames now include version numbers. Dev builds use commit SHA for identification.
 - Automatic changelog generation for releases using git-cliff.
-- The updater is now open source and builds itself on GitHub using GitHub Actions: https://github.com/distantorigin/next-launcher
+- The updater is now open source and builds itself on GitHub using GitHub Actions: https://github.com/spacemangaming/next-launcher
 
 ### Changed
 - Consolidated direction sound mappings into rooms.lua.

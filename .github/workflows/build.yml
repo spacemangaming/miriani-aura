@@ -89,7 +89,7 @@ jobs:
           path: ./release
 
       - name: Clone next-launcher
-        run: git clone https://github.com/distantorigin/next-launcher.git
+        run: git clone https://github.com/spacemangaming/next-launcher.git
 
       - name: Set up Go
         uses: actions/setup-go@v5

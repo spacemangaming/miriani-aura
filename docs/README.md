@@ -3,6 +3,7 @@
 # Table of Contents
 
 - [About This Project](#about-this-project)
+- [History](#history)
 - [Installation](#installation)
   - [Online vs Offline Installers](#online-vs-offline-installers)
 - [Getting Started](#getting-started)
@@ -42,7 +43,15 @@ Miriani-Aura is a successor to the excellent work done by Erick Rosso on [Toastu
 
 Remember that this client package is rapidly evolving and problems may occur. We'll do our best to address these as quickly as possible. Please have patience as we grow! (And do consider contributing if you have relevant skills.)
 
-If you're confused about anything, join metafrequency channel 7.07 in-game and someone will help you out.
+If you're confused about anything, join metafrequency channel 196.2 in-game and someone will help you out.
+
+## History
+
+This project has evolved through several iterations to serve the Miriani community:
+
+1. **Toastush**: Originally created by Erick Rosso as a MUSHclient package successor to earlier client scripts.
+2. **Miriani-Next**: Created, rewritten, and maintained by **distantorigin**. They modernized the platform by upgrading to MUSHclient 5.07, integrating SQLite3 and OpenSSL 3.x for secure connections, introducing the terminal-based configuration (`conf`) system, rewriting the audio engine, and implementing daily log rotation and full-text search. This work laid the entire core foundation of this package.
+3. **Miriani-Aura**: Forked and rebranded by **spacemangaming** to continue developing new features, customize installation/shortcuts, and support ongoing gameplay updates.
 
 ## Installation
 
@@ -336,7 +345,7 @@ Channel history separates different message types into dedicated buffers that yo
 - **Newbie Channel**: Newbie help channel
 - **Starship Scans**: Starship scans (separate from other output)
 - **Roleplay**: Roleplay channel
-- **Separate metafrequency buffers by frequency/label**: Creates individual buffers for each metafrequency channel/label instead of one combined buffer. Monitor multiple frequencies separately (e.g., buffer for 7.07, buffer for 10.5, etc.).
+- **Separate metafrequency buffers by frequency/label**: Creates individual buffers for each metafrequency channel/label instead of one combined buffer. Monitor multiple frequencies separately (e.g., buffer for 196.2, buffer for 10.5, etc.).
 
 **Color Customization** (`conf colors`)
 Opens a color picker to customize text colors for different message types (combat, communication, flight control, etc.) and UI elements (info bar, hyperlinks). Visually distinguish message categories at a glance.
@@ -615,7 +624,7 @@ Additionally, immense thanks goes to my initial testers that put up with numerou
 
 ## Support
 
-For any issues, questions, or feedback, feel free to open an issue on this repository. If you'd like to talk to other Miriani-Aura users, tune a metafrequency communicator to channel 7.07 in-game.
+For any issues, questions, or feedback, feel free to open an issue on this repository. If you'd like to talk to other Miriani-Aura users, tune a metafrequency communicator to channel 196.2 in-game.
 
 ## License
 

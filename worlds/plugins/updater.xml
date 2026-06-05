@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE muclient>
-<!-- Update Plugin - Control the Miriani-Next updater binary -->
+<!-- Update Plugin - Control the Miriani-Aura updater binary -->
 
 <muclient>
 <plugin
@@ -15,7 +15,7 @@
    >
 
 <description trim="y">
-Update Plugin - Control the Miriani-Next updater binary
+Update Plugin - Control the Miriani-Aura updater binary
 
 Commands:
   update switch              - Opens the channel switcher interactively

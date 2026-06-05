@@ -6,7 +6,7 @@
    author="distantorigin"
    id="6773a4c6f0e71d32feac526e"
    language="Lua"
-   purpose="Manages Miriani-Next requirements"
+   purpose="Manages Miriani-Aura requirements"
    requires="5.05"
    save_state="y"
 >
@@ -67,7 +67,7 @@ function check_plugins(plugin_list)
 end
 
 function load_required_plugins()
-   -- Load plugins which are necessary for Miriani-Next to function.
+   -- Load plugins which are necessary for Miriani-Aura to function.
 
    load_plugins(required_plugins)
 end

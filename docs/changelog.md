@@ -1,4 +1,4 @@
-# Miriani-Next Changelog
+# Miriani-Aura Changelog
 
 ## Version 4.1.35 (In Progress)
 
@@ -159,7 +159,7 @@
 ### New
 - Added sounds for the dunk tank game found on Venus.
 - Added sounds for the hum social.
-- Replace the "Your soundpack has been updated to version 'x.y.z'! You can download it here: ..." text with something more relevant to Miriani-Next users.
+- Replace the "Your soundpack has been updated to version 'x.y.z'! You can download it here: ..." text with something more relevant to Miriani-Aura users.
 - Added a Mentions buffer for messages directly said to you.
 
 ### Fixed
@@ -406,7 +406,7 @@
 - MUSHclient window will now size itself correctly when automatically opening the accessible output window.
 - Formatted scan output for artifacts now includes the Type field, if applicable.
 - Added repair timer notifications: get notified when repairs complete while outside engineering (conf ship repair). Press Ctrl+E to check the timer.
-- Shiny new website at https://spacemangaming.github.io/miriani-next/
+- Shiny new website at https://spacemangaming.github.io/Miriani-Aura/
 
 ### Changed
 - Reorganized scan filter shortcuts: sca is now Average Component Damage, scc is Coordinates, scp is Identifiable Power Sources, scs is Cargo. Removed scf, scg, and scv.
@@ -434,7 +434,7 @@
 ## Version 4.1.00
 
 ### New
-- Comprehensive README rewrite with improved organization, clearer installation instructions, and expanded documentation for all features. You can view the README at https://github.com/spacemangaming/miriani-next/
+- Comprehensive README rewrite with improved organization, clearer installation instructions, and expanded documentation for all features. You can view the README at https://github.com/spacemangaming/Miriani-Aura/
 - Complete overhaul of the ambiance system with a new rooms.lua module:
   - Three-tier room matching system: exact room names are checked first, then pattern matching, then fallback to room type from the game's environment flags.
   - Added documentation in rooms.lua explaining how to add new ambiances.
@@ -808,7 +808,7 @@ Note: This release was initially going to be the debut for the new updater, but 
   - Ramp end sound
 - Reset scan filter capture when you move, to prevent oddities where the state might get stuck. (Commonly seen when duplicate lines appear.)
 - Archaeology directional helper now plays artifactHere sound when you arrive at the artifact coordinates.
-- SMC <ship class> now gets handled by Miriani-Next if Proxiani isn't being used, since the in-game version doesn't support arguments.
+- SMC <ship class> now gets handled by Miriani-Aura if Proxiani isn't being used, since the in-game version doesn't support arguments.
 - If .run_updater is present in the main directory, we now run the updater at startup. Primarily used by the installer to prompt an update at first run.
 - Play cancel sound when conf matches fail.
 - Enable Camera buffer by default for new users.

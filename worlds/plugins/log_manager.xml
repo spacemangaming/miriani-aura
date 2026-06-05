@@ -488,7 +488,7 @@ local month_name_to_num = {
   july=7, august=8, september=9, october=10, november=11, december=12
 }
 
-function IsMirianiNextStyle(filename)
+function IsMirianiAuraStyle(filename)
   return filename:match("^%d%d? %a+ %d%d%d%d%.txt$") ~= nil
 end
 
@@ -552,13 +552,13 @@ function ParseDateFromFilename(filename, dir_path)
   return nil
 end
 
-function BuildMirianiNextFilename(year, month, day)
+function BuildMirianiAuraFilename(year, month, day)
   return string.format("%d %s %d.txt", day, month_names[month], year)
 end
 
-function BuildMirianiNextPath(year, month, day)
+function BuildMirianiAuraPath(year, month, day)
   local log_dir = GetLogDir() .. "\\" .. year .. "\\" .. string.format("%02d", month)
-  local filename = BuildMirianiNextFilename(year, month, day)
+  local filename = BuildMirianiAuraFilename(year, month, day)
   return log_dir .. "\\" .. filename, log_dir
 end
 
@@ -586,7 +586,7 @@ function DoImportScan()
             if entry_attr.mode == "directory" then
               scan_dir(path)
             elseif entry:match("%.txt$") then
-              if IsMirianiNextStyle(entry) then
+              if IsMirianiAuraStyle(entry) then
                 already_correct = already_correct + 1
               else
                 local year, month, day = ParseDateFromFilename(entry, dir)
@@ -600,7 +600,7 @@ function DoImportScan()
                 end
 
                 if year and month and day and month >= 1 and month <= 12 and day >= 1 and day <= 31 then
-                  local new_path, new_dir = BuildMirianiNextPath(year, month, day)
+                  local new_path, new_dir = BuildMirianiAuraPath(year, month, day)
                   local file_info = {
                     old_path = path,
                     old_name = entry,
@@ -678,7 +678,7 @@ function DoImportScan()
   if #files_to_rename > 0 then
     Note(string.format("Found %d file(s) to rename:", #files_to_rename))
     for _, file in ipairs(files_to_rename) do
-      local new_name = BuildMirianiNextFilename(file.year, file.month, file.day)
+      local new_name = BuildMirianiAuraFilename(file.year, file.month, file.day)
       Note(string.format("  %s -> %s", file.old_name, new_name))
     end
   end
@@ -686,7 +686,7 @@ function DoImportScan()
   if #files_with_conflicts > 0 then
     Note(string.format("Found %d file(s) with conflicts (destination exists):", #files_with_conflicts))
     for _, file in ipairs(files_with_conflicts) do
-      local new_name = BuildMirianiNextFilename(file.year, file.month, file.day)
+      local new_name = BuildMirianiAuraFilename(file.year, file.month, file.day)
       Note(string.format("  %s -> %s (EXISTS)", file.old_name, new_name))
     end
   end
@@ -694,7 +694,7 @@ function DoImportScan()
   if #files_using_modified_date > 0 then
     Note(string.format("WARNING: Found %d file(s) with unrecognized names (using last modified date):", #files_using_modified_date))
     for _, file in ipairs(files_using_modified_date) do
-      local new_name = BuildMirianiNextFilename(file.year, file.month, file.day)
+      local new_name = BuildMirianiAuraFilename(file.year, file.month, file.day)
       Note(string.format("  %s -> %s (MODIFIED DATE)", file.old_name, new_name))
     end
   end
@@ -702,7 +702,7 @@ function DoImportScan()
   if #files_modified_conflicts > 0 then
     Note(string.format("WARNING: Found %d file(s) using modified date with conflicts:", #files_modified_conflicts))
     for _, file in ipairs(files_modified_conflicts) do
-      local new_name = BuildMirianiNextFilename(file.year, file.month, file.day)
+      local new_name = BuildMirianiAuraFilename(file.year, file.month, file.day)
       Note(string.format("  %s -> %s (MODIFIED DATE, EXISTS)", file.old_name, new_name))
     end
   end

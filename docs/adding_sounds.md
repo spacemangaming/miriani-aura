@@ -1,4 +1,4 @@
-# Adding Sounds to Miriani-Next
+# Adding Sounds to Miriani-Aura
 
 This guide shows you how to add new sound files to the soundpack and share them with others.
 
@@ -20,8 +20,8 @@ This guide shows you how to add new sound files to the soundpack and share them 
 Git is a program that tracks changes to files over time. It's like "track changes" in Microsoft Word, but for entire folders of files. It lets you save snapshots of your work and go back to earlier versions if needed.
 
 ### What is GitHub?
-GitHub is a website where people store projects using Git. You're probably reading this document there. The Miriani-Next soundpack lives on GitHub at:
-https://github.com/spacemangaming/miriani-next
+GitHub is a website where people store projects using Git. You're probably reading this document there. The Miriani-Aura soundpack lives on GitHub at:
+https://github.com/spacemangaming/Miriani-Aura
 
 **Important:** The `main` branch on GitHub is the development release. When you push changes to the main branch, those changes become part of the dev release that other users can update to and use immediately.
 
@@ -81,15 +81,15 @@ How to clone the repository:
 
 1. Open Command Prompt (Win + R, type 'cmd', press Enter)
 2. Type: `cd Documents` (this goes to your Documents folder)
-3. Type: `git clone https://github.com/spacemangaming/miriani-next.git miriani-next-dev`
+3. Type: `git clone https://github.com/spacemangaming/Miriani-Aura.git Miriani-Aura-dev`
 4. Press Enter
 5. Wait for it to finish - you'll see lines of text as it downloads
-6. When it's done, the path is: `C:\Users\YourName\Documents\miriani-next-dev`
+6. When it's done, the path is: `C:\Users\YourName\Documents\Miriani-Aura-dev`
    - Replace YourName with your actual Windows username
 
 **IMPORTANT: Keep Development Separate**
 
-This `miriani-next-dev` folder is ONLY for development work (adding sounds, editing scripts, testing changes). DO NOT use it as your personal game installation or mix it with your personal files.
+This `Miriani-Aura-dev` folder is ONLY for development work (adding sounds, editing scripts, testing changes). DO NOT use it as your personal game installation or mix it with your personal files.
 
 Why?
 - This folder contains Git tracking files (the `.git` folder) that track all changes
@@ -97,8 +97,8 @@ Why?
 - You don't want to accidentally commit your personal settings, worlds, or character data
 
 Best practice:
-- Use `miriani-next-dev` ONLY for adding/testing sounds and making changes
-- Keep your personal Miriani-Next installation in a separate folder for actual gameplay (e.g., `C:\Users\YourName\Documents\Miriani-Next`)
+- Use `Miriani-Aura-dev` ONLY for adding/testing sounds and making changes
+- Keep your personal Miriani-Aura installation in a separate folder for actual gameplay (e.g., `C:\Users\YourName\Documents\Miriani-Aura`)
 - Don't store personal worlds, character data, or custom scripts in the dev folder
 
 ---
@@ -177,7 +177,7 @@ If you just want to add sounds without understanding all the details:
 
 Before adding your first sound, you need to run this once:
 
-1. Navigate to your miriani-next-dev folder
+1. Navigate to your Miriani-Aura-dev folder
 2. Go to the `development\` folder
 3. Double-click `setup-dev.bat`
 
@@ -208,7 +208,7 @@ Sound categories:
 - `wrongExit\` - Invalid exit sounds
 
 Example: You want to add an explosion sound for grenades.
-1. Go to your miriani-next-dev folder
+1. Go to your Miriani-Aura-dev folder
 2. Navigate to: `sounds\miriani\combat\`
 3. Create a new folder called `explosions\` (if it doesn't exist)
 4. Copy your grenade1.ogg file into that folder
@@ -270,7 +270,7 @@ Important notes:
 
 ### Step 3: Test your sound
 
-1. Find and double-click mushclient.exe in your miriani-next folder
+1. Find and double-click mushclient.exe in your Miriani-Aura folder
 2. Connect to Miriani and play the game
 3. Do the action that should trigger your sound (throw a grenade, etc.)
 4. Did the sound play?
@@ -287,7 +287,7 @@ Common reasons sounds don't play:
 
 ### Step 4: Save your changes with commit.bat
 
-1. Under the miriani-next-dev folder, go to the `development\` folder
+1. Under the Miriani-Aura-dev folder, go to the `development\` folder
 2. Double-click `commit.bat`
 3. A console window will appear. This step saves a "snapshot" of your changes so you can share them later.
 
@@ -339,7 +339,7 @@ Would you like to push to remote? (y/n):
 About pushing to remote:
 
 What is "remote"?
-- The remote is the GitHub repository location (https://github.com/spacemangaming/miriani-next)
+- The remote is the GitHub repository location (https://github.com/spacemangaming/Miriani-Aura)
 - When you cloned the repository, Git automatically configured this remote location with the name "origin"
 - "Pushing" means uploading your saved changes from your computer to GitHub
 
@@ -403,7 +403,7 @@ Would you like to push to remote? (y/n):
 ```
 
 What is "remote"?
-- The remote is the GitHub repository location (https://github.com/spacemangaming/miriani-next)
+- The remote is the GitHub repository location (https://github.com/spacemangaming/Miriani-Aura)
 - When you cloned the repository, Git automatically configured this remote location with the name "origin"
 - This is where the soundpack lives online and where other maintainers get updates from
 
@@ -467,7 +467,7 @@ Think of it like this: You're working on a shared document. Before you add your 
 
 **The Easy Way: Using update.bat (Recommended)**
 
-1. Navigate to your miriani-next-dev folder in File Explorer
+1. Navigate to your Miriani-Aura-dev folder in File Explorer
 2. Go to the `development\` folder
 3. Double-click `update.bat`
 4. Follow the prompts
@@ -482,9 +482,9 @@ The batch file will automatically:
 If you prefer to run the git command yourself:
 
 1. Open Command Prompt (Win + R, type `cmd`, press Enter)
-2. Navigate to your miriani-next-dev folder:
+2. Navigate to your Miriani-Aura-dev folder:
    ```
-   cd C:\Users\YourName\Documents\miriani-next-dev
+   cd C:\Users\YourName\Documents\Miriani-Aura-dev
    ```
    (Replace YourName with your actual Windows username)
 3. Run the pull command:
@@ -501,7 +501,7 @@ remote: Counting objects: 100% (12/12), done.
 remote: Compressing objects: 100% (8/8), done.
 remote: Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (8/8), done.
-From https://github.com/spacemangaming/miriani-next
+From https://github.com/spacemangaming/Miriani-Aura
    a1b2c3d..e4f5g6h  main       -> origin/main
 Updating a1b2c3d..e4f5g6h
 Fast-forward
@@ -664,8 +664,8 @@ fatal: not a git repository (or any of the parent directories): .git
 
 Solution:
 1. Make sure you cloned the repository using `git clone` (don't download the ZIP file)
-2. Make sure you're in the correct folder (should be `miriani-next-dev`)
-3. Check if the `.git` folder exists in your miriani-next-dev folder (it's hidden by default)
+2. Make sure you're in the correct folder (should be `Miriani-Aura-dev`)
+3. Check if the `.git` folder exists in your Miriani-Aura-dev folder (it's hidden by default)
    - In Windows Explorer, go to View > Show > Hidden items to see it
 
 ---
@@ -732,7 +732,7 @@ Check these things:
 
 1. Is the file path correct?
    - Open Command Prompt
-   - `cd /d C:\path\to\miriani-next-dev`
+   - `cd /d C:\path\to\Miriani-Aura-dev`
    - `dir sounds\miriani\combat\explosions\grenade1.ogg`
    - You should see the file listed. If you see "File Not Found", the path is wrong.
 
@@ -762,7 +762,7 @@ Try to not double-click the batch files. Run them from Command Prompt instead:
 1. Open Command Prompt (Win + R, type `cmd`, Enter)
 2. Navigate to the development folder:
    ```
-   cd documents\miriani-next-dev\development
+   cd documents\Miriani-Aura-dev\development
    ```
 3. Run the batch file by typing its name:
    ```
@@ -779,7 +779,7 @@ Problem: Windows is blocking Git from accessing files.
 
 Solution:
 - Run Command Prompt as Administrator (right-click Command Prompt → "Run as administrator")
-- Make sure the miriani-next-dev folder isn't in a protected location (like `C:\Program Files`)
+- Make sure the Miriani-Aura-dev folder isn't in a protected location (like `C:\Program Files`)
 - Check if antivirus is blocking Git
 - Make sure no other program has the files open (close MUSHclient, close Notepad, etc.)
 

@@ -7,8 +7,8 @@
 
 <muclient>
 <plugin
-   name="MirianiNext"
-   author="Miriani-Next Developers"
+   name="MirianiAura"
+   author="Miriani-Aura Developers"
    id="843d2f53cb3685465bda7d4a"
    language="Lua"
    date_written="2021-04-12 15:47:28"
@@ -19,11 +19,11 @@
 
  <description trim="y">
 
-    Welcome to Miriani-Next! Miriani-Next is a successor to the Toastush soundpack. Without the work by Erick Rosso and others, Miriani-Next wouldn't exist in its current form today. Thank you for trying it out and do let us know how you like it!
+    Welcome to Miriani-Aura! Miriani-Aura is a successor to the Toastush soundpack. Without the work by Erick Rosso and others, Miriani-Aura wouldn't exist in its current form today. Thank you for trying it out and do let us know how you like it!
 
     ----------------------------------------
 
-As of October 13, 2025, Toastush-NG is now a hard fork of the Toastush soundpack and is known as Miriani-Next. The plugin will continue to use the same ID and file name for compatibility, but otherwise you should expect functionality to break. Migrating from Toastush to Miriani-Next is not possible and requires re-entering your settings from scratch.
+As of October 13, 2025, Toastush-NG is now a hard fork of the Toastush soundpack and is known as Miriani-Aura. The plugin will continue to use the same ID and file name for compatibility, but otherwise you should expect functionality to break. Migrating from Toastush to Miriani-Aura is not possible and requires re-entering your settings from scratch.
     
     To get started with configuring the soundpack, type 'conf'. To jump directly to a category, add the category name after the conf command like so: 'conf ship'. You can also press F1.
     To view the changelog, type 'whatsnew' or press F2.
@@ -194,7 +194,7 @@ show_paralyzed(roundtime, stuntime)
   >
   <send>
 mplay("misc/Soundpack/updateAnnounced")
-notify("important", "A new version of Miriani-Next is available: version %1. Press Ctrl+U or type UPDATE to update now.")
+notify("important", "A new version of Miriani-Aura is available: version %1. Press Ctrl+U or type UPDATE to update now.")
   </send>
   </trigger>
 
@@ -304,7 +304,7 @@ notify("important", "A new version of Miriani-Next is available: version %1. Pre
    ignore_case="y"
    send_to="12"
   >
-  <send>notify("info", "Sending Miriani-Next registration...", 1)</send>
+  <send>notify("info", "Sending Miriani-Aura registration...", 1)</send>
   </alias>
 
   <alias
@@ -474,7 +474,7 @@ require(scripts.."init")
 MSP, GMCP = 90, 201 
 timeout = 120
 script = 12
-registry = "Miriani-Next"
+registry = "Miriani-Aura"
 heartbeat = 0
 reset_heartbeat = 60
 ping_after_heartbeat = 30
@@ -678,8 +678,8 @@ end
 
 function OnPluginInstall()
   math.randomseed(os.time())
-  print("Welcome to Miriani-Next ", VERSION, ", a MUSHclient Miriani soundpack! For help see next:help.")
-  print("Miriani-Next is in beta. Please review 'next:help' and tune a metafrequency communicator to frequency 7.07 for bugs and discussion.")
+  print("Welcome to Miriani-Aura ", VERSION, ", a MUSHclient Miriani soundpack! For help see next:help.")
+  print("Miriani-Aura is in beta. Please review 'next:help' and tune a metafrequency communicator to frequency 7.07 for bugs and discussion.")
   print("If you're interested in watching the development process from afar, metafrequency 338.7 is the channel. This is public because we want to encourage discussion and new people to work on the soundpack, but if we get an influx of questions or nonsense we will change it and not provide the new frequency.")
   print("Frequency 7.07 should still be used for install questions, etc, and most other things. Only tune to channel 338.7 if you are interested in LUA code, triggers, MUSHClient work etc.")
 

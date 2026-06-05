@@ -27,7 +27,7 @@ MCP.packages = {
 
 -- Client info (class-level, shared)
 MCP.client_info = {
-  name = "Miriani-Next",
+  name = "Miriani-Aura",
   internal_version = 0,
   reg_id = 0,
   flags = "p"

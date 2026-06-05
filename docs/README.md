@@ -1,4 +1,4 @@
-# Miriani-Next
+# Miriani-Aura
 
 # Table of Contents
 
@@ -25,7 +25,7 @@
   - [Alternate Sounds](#alternate-sounds)
 - [Commands Reference](#commands-reference)
 - [Keyboard Shortcuts](#keyboard-shortcuts)
-- [What's New in Miriani-Next](#whats-new-in-miriani-next)
+- [What's New in Miriani-Aura](#whats-new-in-Miriani-Aura)
 - [Why Move Away from VIP Mud?](#why-move-away-from-vip-mud)
 - [Design Philosophy](#design-philosophy)
 - [AI-Generated Content (AIGC)](#ai-generated-content-aigc)
@@ -34,11 +34,11 @@
 - [Support](#support)
 - [License](#license)
 
-Miriani-Next is a MUSHclient client package specifically designed for [Miriani](https://toastsoft.net/). It provides audio feedback and modern conveniences for Miriani gameplay. Miriani-Next runs on Windows and is easy to set up.
+Miriani-Aura is a MUSHclient client package specifically designed for [Miriani](https://toastsoft.net/). It provides audio feedback and modern conveniences for Miriani gameplay. Miriani-Aura runs on Windows and is easy to set up.
 
 ## About This Project
 
-Miriani-Next is a successor to the excellent work done by Erick Rosso on [Toastush](https://github.com/PsudoDeSudo/Toastush). With the advent of agentic coding tools, work is currently underway to migrate popular features from the VIP Mud soundpack to MUSHclient, making them more performant and maintainable.
+Miriani-Aura is a successor to the excellent work done by Erick Rosso on [Toastush](https://github.com/PsudoDeSudo/Toastush). With the advent of agentic coding tools, work is currently underway to migrate popular features from the VIP Mud soundpack to MUSHclient, making them more performant and maintainable.
 
 Remember that this client package is rapidly evolving and problems may occur. We'll do our best to address these as quickly as possible. Please have patience as we grow! (And do consider contributing if you have relevant skills.)
 
@@ -50,16 +50,16 @@ If you're confused about anything, join metafrequency channel 7.07 in-game and s
 2. Run `miriani.exe`
 3. The launcher will guide you through initial installation and updates
 
-The launcher handles everything automatically - installation, updates, channel selection (stable/dev), and migration from older versions. It will install Miriani-Next to your Documents folder by default.
+The launcher handles everything automatically - installation, updates, channel selection (stable/dev), and migration from older versions. It will install Miriani-Aura to your Documents folder by default.
 
-**Proxiani Users**: The launcher automatically detects Proxiani and updates world files accordingly. If you're using Proxiani, make sure it's running before launching Miriani-Next. See the [Proxiani GitHub page](https://github.com/PsudoDeSudo/proxiani) for Proxiani setup.
+**Proxiani Users**: The launcher automatically detects Proxiani and updates world files accordingly. If you're using Proxiani, make sure it's running before launching Miriani-Aura. See the [Proxiani GitHub page](https://github.com/PsudoDeSudo/proxiani) for Proxiani setup.
 
 ### Online vs Offline Installers
 
 There are two versions of the installer available:
 
 - **miriani.exe** (Online Installer): A small download that fetches the latest files from the internet during installation. This is the recommended choice for most users, and is housed in a separate repository.
-- **miriani-x.y.z.exe** (Offline Installer): A larger download that contains everything needed to install without an internet connection. Use this if you have unreliable internet or need to install on a computer without network access. You can find these on the [miriani-Next releases page](https://github.com/spacemangaming/miriani-next/releases).
+- **miriani-x.y.z.exe** (Offline Installer): A larger download that contains everything needed to install without an internet connection. Use this if you have unreliable internet or need to install on a computer without network access. You can find these on the [Miriani-Aura releases page](https://github.com/spacemangaming/Miriani-Aura/releases).
 
 Both installers work the same way - the only difference is whether files are downloaded during installation or already included.
 
@@ -67,13 +67,13 @@ Both installers work the same way - the only difference is whether files are dow
 
 If you're transitioning from the original Toastush client package, you should use the latest installer. The installer contains a migration tool, which will prompt you to move Toastush settings and state files. Ensure you have MUSHclient closed first before doing this.
 
-Miriani-Next contains numerous configuration options that Toastush doesn't. In addition, the configuration system has been completely redesigned from the ground up. As a result, all settings from old Toastush installations may not fully transfer. Optimistically, you should expect at least some loss of configuration fidelity when migrating. Realistically it may not work at all. Very little time has been dedicated to testing this extensively, since reconfiguring the client package is a relatively painless process.
+Miriani-Aura contains numerous configuration options that Toastush doesn't. In addition, the configuration system has been completely redesigned from the ground up. As a result, all settings from old Toastush installations may not fully transfer. Optimistically, you should expect at least some loss of configuration fidelity when migrating. Realistically it may not work at all. Very little time has been dedicated to testing this extensively, since reconfiguring the client package is a relatively painless process.
 
 ### Post-Installation Steps
 
 Unlike the Miriani Soundpack for VIP Mud, no configuration is needed after installation beyond the settings you'd like to change via the `conf` command. We assume safe defaults for everyone.
 
-**Required: Type `INFO` after your first login.** Miriani-Next needs to detect your organization and courier company to play the correct sounds for those channels. Just type `INFO` once after connecting - it reads your organization from the output and saves it automatically. If you skip this, organization and courier channel sounds won't work.
+**Required: Type `INFO` after your first login.** Miriani-Aura needs to detect your organization and courier company to play the correct sounds for those channels. Just type `INFO` once after connecting - it reads your organization from the output and saves it automatically. If you skip this, organization and courier channel sounds won't work.
 
 ### Reviewing Output
 
@@ -124,13 +124,13 @@ There's no separate error window in MUSHclient. Errors initially appear as a dia
 
 Typically, the Miriani Soundpack for VIP Mud will use your VIP Mud character name and password for its auto login system.
 
-Unfortunately, while MUSHclient has an auto login system, it's impossible to retrieve your provided credentials. For the client package to work properly upon logging in, we need to tell Miriani that Miriani-Next is in use, and this must occur before we send your username and password. This ensures Miriani will send environmental information when you first connect.
+Unfortunately, while MUSHclient has an auto login system, it's impossible to retrieve your provided credentials. For the client package to work properly upon logging in, we need to tell Miriani that Miriani-Aura is in use, and this must occur before we send your username and password. This ensures Miriani will send environmental information when you first connect.
 
-To navigate this complexity, Miriani-Next has its own login system, which you can configure under `conf auto_login` (or `conf auto` for short).
+To navigate this complexity, Miriani-Aura has its own login system, which you can configure under `conf auto_login` (or `conf auto` for short).
 
 ### Automatic Logging
 
-Miriani-Next includes an automatic logging system that handles everything for you. Logs are automatically rotated daily at midnight and organized in a structured directory:
+Miriani-Aura includes an automatic logging system that handles everything for you. Logs are automatically rotated daily at midnight and organized in a structured directory:
 
 ```
 logs/<world>/<year>/<month>/<day> <Month> <year>.txt
@@ -148,7 +148,7 @@ The search feature (`lg find`) scans all logs and presents results in an interac
 
 ## Updates
 
-Miriani-Next includes a built-in update system that keeps your client package current with the latest features and fixes.
+Miriani-Aura includes a built-in update system that keeps your client package current with the latest features and fixes.
 
 ### Checking for Updates
 
@@ -161,7 +161,7 @@ When updates are found, you'll be prompted to install them. Some updates may req
 
 ### Automatic Updates
 
-Miriani-Next can update automatically based on your preferences in `conf general`:
+Miriani-Aura can update automatically based on your preferences in `conf general`:
 
 - **Automatically apply updates quietly at login**: Updates install silently when you connect to the game
 - **Automatically apply updates while idle**: Updates install when you're idle
@@ -180,7 +180,7 @@ You can switch channels at any time without losing your settings. You will not, 
 
 ### Switching Channels
 
-The easiest way to switch channels is using the batch files in your Miriani-Next folder:
+The easiest way to switch channels is using the batch files in your Miriani-Aura folder:
 
 - **Switch to Stable.bat** - Switch to the stable channel for tested releases
 - **Switch to Dev.bat** - Switch to the dev channel for the latest features
@@ -193,7 +193,7 @@ You can also switch channels from within the client by typing `update switch` fo
 If you encounter problems updating from within MUSHclient, you can run the updater directly:
 
 1. Close MUSHclient completely
-2. Navigate to your Miriani-Next folder (usually in Documents\Miriani-Next)
+2. Navigate to your Miriani-Aura folder (usually in Documents\Miriani-Aura)
 3. Double-click **update.exe** to run the updater outside of MUSHclient
 
 This is particularly helpful for users running MUSHclient in a virtual machine that shares folders with the host computer, as permission issues can sometimes prevent inline updates from completing properly.
@@ -202,7 +202,7 @@ For a full list of update commands, see the [Commands Reference](#commands-refer
 
 ## Configuration
 
-Miriani-Next uses an interactive, menu-based configuration system. Access it by typing `conf` or pressing **F1**.
+Miriani-Aura uses an interactive, menu-based configuration system. Access it by typing `conf` or pressing **F1**.
 
 **Configuration Command Syntax**:
 - `conf` - Opens the main configuration menu showing all categories
@@ -227,15 +227,15 @@ Miriani-Next uses an interactive, menu-based configuration system. Access it by 
 
 **File Storage**:
 
-All configuration for Miriani-Next is saved in the `worlds\settings` folder:
+All configuration for Miriani-Aura is saved in the `worlds\settings` folder:
 - `toastush.conf` - Main configuration (only stores user-modified values)
 - `auto_login.conf` - Auto login credentials (saved separately)
 
-**Security Note**: These files include auto login credentials if enabled. If you're sharing configurations, delete the `auto_login.conf` file first. Keep your Miriani-Next folder secure on shared machines.
+**Security Note**: These files include auto login credentials if enabled. If you're sharing configurations, delete the `auto_login.conf` file first. Keep your Miriani-Aura folder secure on shared machines.
 
 **Client Configuration**:
 
-Miriani-Next is not responsible for MUSHclient configuration (connection info, fonts, window settings). These are managed by MUSHclient and exist in:
+Miriani-Aura is not responsible for MUSHclient configuration (connection info, fonts, window settings). These are managed by MUSHclient and exist in:
 * Global prefs: `mushclient_prefs.sqlite`, `mushclient.ini`
 * World file: `worlds\Miriani.MCL`
 
@@ -342,7 +342,7 @@ Channel history separates different message types into dedicated buffers that yo
 Opens a color picker to customize text colors for different message types (combat, communication, flight control, etc.) and UI elements (info bar, hyperlinks). Visually distinguish message categories at a glance.
 
 **Sound Categories** (`conf audio groups`)
-Miriani-Next discovers audio categories dynamically as sounds play (Starship, Vehicle, Activity, Combat, Environment, etc.). Toggle entire categories on/off. For example, disable "Environment" to silence all ambient sounds without affecting starship or combat sounds. Categories are discovered during gameplay - new categories appear as you encounter new sound types.
+Miriani-Aura discovers audio categories dynamically as sounds play (Starship, Vehicle, Activity, Combat, Environment, etc.). Toggle entire categories on/off. For example, disable "Environment" to silence all ambient sounds without affecting starship or combat sounds. Categories are discovered during gameplay - new categories appear as you encounter new sound types.
 
 **Sound Variants** (`conf sound variants`)
 Some sounds have multiple versions you can choose from:
@@ -369,7 +369,7 @@ Tip for finding sound paths: Enable "Sound Playback History" in `conf developer`
 
 ## Commands Reference
 
-This section documents all major commands available in Miriani-Next.
+This section documents all major commands available in Miriani-Aura.
 
 **Configuration**
 - `conf` - Open main configuration menu
@@ -500,7 +500,7 @@ This is a mostly complete reference of keyboard shortcuts. For the most up-to-da
 | Tab/Shift+Tab | Activate accessible output (when enabled) |
 | Ctrl+Space | Tab completion (when Tab activates output) |
 
-## What's New in Miriani-Next
+## What's New in Miriani-Aura
 
 See the [changelog](/docs/changelog.md) for a comprehensive list of changes since Toastush 3.0.
 
@@ -586,7 +586,7 @@ These scripts are **not** [vibe-coded](https://en.wikipedia.org/wiki/Vibe_coding
 
 ## Contributions
 
-We welcome contributions to Miriani-Next! To contribute:
+We welcome contributions to Miriani-Aura! To contribute:
 
 1. **Adding Custom Scripts**:
    - Create a new file in the project directory titled `extras-<user>.lua`, replacing `<user>` with your username or handle.
@@ -615,7 +615,7 @@ Additionally, immense thanks goes to my initial testers that put up with numerou
 
 ## Support
 
-For any issues, questions, or feedback, feel free to open an issue on this repository. If you'd like to talk to other Miriani-Next users, tune a metafrequency communicator to channel 7.07 in-game.
+For any issues, questions, or feedback, feel free to open an issue on this repository. If you'd like to talk to other Miriani-Aura users, tune a metafrequency communicator to channel 7.07 in-game.
 
 ## License
 
